@@ -1,0 +1,17 @@
+@startuml
+class app.User {
+~ Address address
++ String getAddress()
++ void setAddress(String)
+}
+
+
+class app.Main {
++ {static} void main(String[])
+}
+
+class app.Address {
+~ {static} String address
+}
+
+@enduml

@@ -11,12 +11,15 @@ class User {
 
     // методи для роботи з адресою об'екту класу Address
     // setAddress()
-    public String getAddress() {
-        return Address.address;
+    public void setAddress(String city, String street, int building) {
+        address.setCity(city);
+        address.setStreet(street);
+        address.setBuilding(building);
     }
 
-    // та getAddress()
-    public void setAddress(String address) {
-        Address.address = address;
+    // getAddress()
+    public String getAddress() {
+        return (address.getCity() + ", " + address.getStreet() + ", " + address.getBuilding());
     }
+
 }

@@ -1,8 +1,8 @@
 @startuml
 class app.User {
 ~ Address address
++ void setAddress(String,String,int)
 + String getAddress()
-+ void setAddress(String)
 }
 
 
@@ -11,7 +11,19 @@ class app.Main {
 }
 
 class app.Address {
-~ {static} String address
+- String city
+- String street
+- int building
++ String getCity()
++ void setCity()
++ void setCity(String)
++ String getStreet()
++ void setStreet(String)
++ void setStreet()
++ int getBuilding()
++ void setBuilding(int)
++ void setBuilding()
 }
+
 
 @enduml
